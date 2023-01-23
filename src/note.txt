@@ -1,0 +1,29 @@
+lazy loading
+....................
+
+-module creation
+...................
+
+    ng g module modulename
+
+lazy loaded module creation
+..............................
+    ng g module modulename --route modulename --module rootmodulename
+
+Access data from component path
+.....................................
+
+ActivatedRoute - class
+params         -method
+
+pipe creation
+...................
+ng g pipe pipename
+
+BehaviourSubject in angular
+.............................
+
+data sharing btwn modules
+
+rxjs
+ 

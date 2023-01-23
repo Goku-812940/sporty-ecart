@@ -1,0 +1,48 @@
+<!-- Product section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6 "><img class="card-img-top mb-5 mb-md-0" src="{{productdata.productImg}}" alt="..." />
+            </div>
+            <div class="col-md-6">
+                <div class="fs-5 mb-1">{{productdata.brand_name}}</div>
+                <h1 class="display-5 fw-bolder">{{productdata.productName}}</h1>
+                <div class="rating sm-12 mb-4"
+                    style="background-color: rgb(218, 218, 218);width: fit-content;border-radius: 4px;"><span
+                        class="fa fa-star checked" style="color: orange;"></span>{{productdata.rating}}/5</div>
+
+                <div class="fs-6 mb-2">
+                    <span class="text-decoration-line-through me-2">₹{{productdata.orginalPrice}}</span>
+                   
+                </div>
+
+                <div class="fs-5 mb-2"> <span>₹{{productdata.discountPrice}}</span></div>
+
+
+                <div class="container " style="margin-bottom: 50px;">
+                    <div class="row ">
+                        <div class="left col-6 text-center "><a href="product/view-edit/{{productdata.id}}">
+                                <button class="btn text-white  me-2 " type="button">
+                                    Edit
+                                </button>
+                            </a>
+                        </div>
+                        <div class="right col-6 text-center"><a href="product/view-delete/{{productdata.id}}">
+                                <button class="btn text-white " type="button">
+                                    Delete
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span class="fs-5">Made for</span>
+                    <p class="lead ">{{productdata.description}}</p>
+    
+                </div>
+                <div><h5>{{productdata.warranty}} year warranty*</h5></div>
+            </div>
+            
+        </div>
+    </div>
+</section>

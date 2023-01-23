@@ -1,0 +1,100 @@
+<div class=" text-center   " style="color: rgb(73, 73, 73); font-family:'Roboto', sans-serif;width: 99.2%;">
+    <div class="row " style="background-color: #ff8243;">
+        <div class="col-2 p-2">
+            <button style="border: none;background-color:#ff8243 ;color: white;">
+                
+                <a (click)="filter('')">
+
+                    <h6>All Sports</h6>
+                </a>
+            </button>
+        </div>
+
+        <div class="col-2 sm-6 p-2 " style="border-left: 1px solid white;">
+            <button style="border: none;background-color:#ff8243 ;color: white;">
+                <a (click)="filter(1)">
+                    <h6>Men</h6>
+                </a>
+            </button>
+        </div>
+
+        <div class="col-2 sm-6 p-2" style="border-left: 1px solid white;">
+            <button style="border:none;background-color:#ff8243 ;color: white;">
+                <a (click)="filter(2)">
+                    <h6>Women</h6>
+                </a>
+            </button>
+        </div>
+
+        <div class="col-2 sm-6 p-2" style="border-left: 1px solid white;">
+            <button style="border: none;background-color:#ff8243 ;color: white;">
+                <a (click)="filter(3)">
+                    <h6>Kids</h6>
+                </a>
+            </button>
+        </div>
+        <div class="col-2 sm-6 p-2" style="border-left: 1px solid white;">
+            <button style="border: none ;background-color:#ff8243 ;color: white;">
+                <a (click)="filter(4)">
+                    <h6>Sports</h6>
+                </a>
+            </button>
+        </div>
+
+        <div class="col-2 sm-6 p-2" style="border-left: 1px solid white;">
+            <button style="border: none;background-color:#ff8243 ;color: white;">
+                <a (click)="filter(5)">
+                    <h6>Gym </h6>
+                </a>
+            </button>
+        </div>
+       
+    </div>
+</div>
+<div>
+
+    <img src="https://i.postimg.cc/ZYptXJs9/web-01.jpg" class="img-fluid w-100 " alt="Responsive image"></div>
+   
+
+<!-- Section-->
+
+    <section class="py-5">
+        <div  class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div *ngFor="let i of filterproducts | filter:searchkey:'productName'" class="col mb-5">
+                    <div  class="card h-100  ">
+                        <!-- Product image-->
+                        <img style="height: 222px; width: 100%;" class="card-img-top " src="{{i.productImg}}" alt="..." />
+                        <div class="rating sm-12"><span class="fa fa-star checked" style="color: orange;"></span>{{i.rating}}</div>
+    
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">{{i.brand_name}}</h5>
+                                <h6 style="color: rgb(86, 86, 86);font-family:'Roboto', sans-serif;">{{i.productName}} </h6>
+                                <!-- <p style="font-family:'Roboto', sans-serif;">{{i.description}}</p> -->
+                                
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                       <div class="container">
+                            <div class="row ">
+                                <div class="left col-6 text-center "><h6 class="mt-2 text-light" style="font-family:'Roboto', sans-serif;">₹{{i.discountPrice}}</h6> </div>
+                                <div class="right col-6 text-center"><a class="btn mt-auto ms-3 text-light" style="font-family:'Roboto', sans-serif;"
+                                    href="product/view-product/{{i.id}}">More</a> </div>
+                            </div >
+                       </div>
+    
+                        <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                    href="product/view-product/{{i.id}}">View options</a></div>
+                        </div> -->
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+    </section>
+

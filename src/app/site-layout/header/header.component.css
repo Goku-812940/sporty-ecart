@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:wght@300&display=swap');
+.bg-blue-400{
+background-color: #26619c;
+height: auto;
+}
+.fnt{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 27px;
+  
+}
+.fonts{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+
+.bgc{
+    background-color: #ef81ae;
+}
+.search{
+    background-color: #26619c ;
+  
+}
+.search:hover{
+    background-color:#ff8243 ;
+
+}
+.bx{
+    background-color: #26619c ;
+    color: white;
+  
+}
+.bx:hover{
+   background-color: #26619c; 
+   color:#ff8243 ;
+
+    
+}
+
+
+  

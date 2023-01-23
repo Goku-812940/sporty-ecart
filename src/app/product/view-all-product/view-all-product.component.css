@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:wght@300&display=swap');
+.left, .right {
+    background:#26619c;
+    position: relative;
+    height: 36px;
+    width: 118px;
+    float: left;
+}
+
+.left:after {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 100px solid #fff;
+    border-left: 30px solid transparent;
+    border-right: 0 solid #fff;
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+
+.right {
+    background:#ff8243 ;
+    width: 150px;
+   
+}
+
+.right:before {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-top: 100px solid #fff;
+    border-bottom: 50px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.rating{
+    margin-top: -26px;
+    margin-left: 4px;
+    border: 1px  black;
+    border-radius: 3px;
+    width: 22%;
+    background-color: gainsboro;
+    text-align: center;
+}
